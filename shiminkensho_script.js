@@ -5,47 +5,47 @@
 const questions = [
   {
     number: 1,
-    answer: "苫小牧",
+    answer: ["苫小牧", "とまこまい", "トマコマイ", "Tomakomai", "tomakomai"],
     unit: "市"
   },
   {
     number: 2,
-    answer: "加古川",
+    answer: ["加古川", "かこがわ", "カコガワ", "Kakogawa", "kakogawa"],
     unit: "市"
   },
   {
     number: 3,
-    answer: "台東",
+    answer: ["台東", "たいとう", "タイトウ", "Taitou", "taitou"],
     unit: "区"
   },
   {
     number: 4,
-    answer: "出雲",
+    answer: ["出雲", "いずも", "いづも", "イズモ", "イヅモ", "Izumo", "izumo"],
     unit: "市"
   },
   {
     number: 5,
-    answer: "弘前",
+    answer: ["弘前", "ひろさき", "ヒロサキ", "Hirosaki", "hirosaki"],
     unit: "市"
   },
   {
     number: 6,
-    answer: "大牟田",
+    answer: ["大牟田", "おおむた", "オオムタ", "Oomuta", "Omuta", "Ohmuta", "oomuta", "omuta", "ohmuta"],
     unit: "市"
   },
   {
     number: 7,
-    answer: "富士",
+    answer: ["富士", "ふじ", "フジ", "Fuji", "Huji", "fuji", "huji"],
     unit: "市"
   },
   {
     number: 8,
-    answer: "新潟",
+    answer: ["新潟", "にいがた", "ニイガタ", "Niigata", "niigata"],
     unit: "市"
   },
   {
     number: 9,
-    answer: "新居浜",
+    answer: ["新居浜", "にいはま", "ニイハマ", "Niihama", "niihama"],
     unit: "市"
   }
 ];
