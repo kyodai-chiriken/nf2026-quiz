@@ -6,51 +6,61 @@ const questions = [
   {
     number: 1,
     answer: ["亀岡", "かめおか", "カメオカ", "Kameoka", "kameoka"],
+    displayAnswer: "亀岡",
     unit: "市"
   },
   {
     number: 2,
     answer: ["苫小牧", "とまこまい", "トマコマイ", "Tomakomai", "tomakomai"],
+    displayAnswer: "苫小牧",
     unit: "市"
   },
   {
     number: 3,
     answer: ["加古川", "かこがわ", "カコガワ", "Kakogawa", "kakogawa"],
+    displayAnswer: "加古川",
     unit: "市"
   },
   {
     number: 4,
     answer: ["台東", "たいとう", "タイトウ", "Taitou", "taitou"],
+    displayAnswer: "台東",
     unit: "区"
   },
   {
     number: 5,
     answer: ["出雲", "いずも", "いづも", "イズモ", "イヅモ", "Izumo", "izumo"],
+    displayAnswer: "出雲",
     unit: "市"
   },
   {
     number: 6,
     answer: ["弘前", "ひろさき", "ヒロサキ", "Hirosaki", "hirosaki"],
+    displayAnswer: "弘前",
     unit: "市"
   },
   {
     number: 7,
     answer: ["大牟田", "おおむた", "オオムタ", "Oomuta", "Omuta", "Ohmuta", "oomuta", "omuta", "ohmuta"],
+    displayAnswer: "大牟田",
     unit: "市"
   },
   {
     number: 8,
     answer: ["富士", "ふじ", "フジ", "Fuji", "Huji", "fuji", "huji"],
+    displayAnswer: "富士",
     unit: "市"
   },
   {
     number: 9,
     answer: ["新潟", "にいがた", "ニイガタ", "Niigata", "niigata"],
+    displayAnswer: "新潟",
     unit: "市"
   },
   {
     number: 10,
     answer: ["新居浜", "にいはま", "ニイハマ", "Niihama", "niihama"],
+    displayAnswer: "新居浜",
     unit: "市"
   }
 ];
@@ -130,6 +140,10 @@ questions.forEach(function(question) {
 
     result.textContent = "正解：" + question.answer;
     result.style.color = "#2864c5";
+
+  });
+
+});
 
   });
 
