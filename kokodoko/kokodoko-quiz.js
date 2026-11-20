@@ -121,7 +121,7 @@ questions.forEach(function(question) {
       return;
     }
 
-    if (question.answers.includes(userAnswer)) {
+    if (question.answer.includes(userAnswer)) {
       result.textContent = "正解：" + question.displayAnswer;
       result.style.color = "green";
     } else {

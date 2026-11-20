@@ -114,3 +114,16 @@ button {
 .quiz-links a:focus-visible {
   background-color: #e8edf5;
 }
+
+/* 解答欄と市・区・町・村などの表示 */
+.answer-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.answer-unit {
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
