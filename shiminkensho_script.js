@@ -125,7 +125,7 @@ questions.forEach(function(question) {
       return;
     }
 
-    if (userAnswer === question.answer) {
+    if (question.answer.includes(userAnswer)) {
       result.textContent = "正解です！";
       result.style.color = "green";
     } else {
@@ -140,10 +140,6 @@ questions.forEach(function(question) {
 
     result.textContent = "正解：" + question.answer;
     result.style.color = "#2864c5";
-
-  });
-
-});
 
   });
 
