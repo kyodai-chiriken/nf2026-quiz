@@ -1,0 +1,32 @@
+/* 選択式の回答欄。その他の共通スタイルは ../style.css を参照します。 */
+.answer-choices {
+  border: none;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.answer-choices legend {
+  margin-bottom: 10px;
+}
+
+.answer-choice {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 12px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.answer-choice input {
+  flex-shrink: 0;
+}
+
+.answer-choice:has(input:checked) {
+  background-color: #e8edf5;
+  border-color: #2864c5;
+}
