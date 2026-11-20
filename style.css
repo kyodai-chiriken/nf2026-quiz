@@ -1,0 +1,129 @@
+/* ページ全体 */
+body {
+  font-family: sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 30px 15px;
+}
+
+/* 全体のカード */
+.page-container {
+  background-color: white;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* タイトル */
+h1 {
+  color: #2864c5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 1問ごとのカード */
+.question-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* 問題番号 */
+.question-number {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+/* 回答入力欄 */
+.answer-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* ボタン */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  flex: 1;
+}
+
+/* 答え合わせボタン */
+.check-button {
+  background-color: #2864c5;
+  color: white;
+}
+
+/* 正解を見るボタン */
+.show-button {
+  background-color: #e8edf5;
+  color: #333;
+}
+
+/* ボタンを並べる */
+.button-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* 結果表示 */
+.result {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* スマホ対応 */
+@media (max-width: 480px) {
+  .page-container {
+    padding: 18px;
+  }
+
+  .button-area {
+    flex-direction: column;
+  }
+}
+
+/* クイズ一覧 */
+.quiz-links {
+  list-style: none;
+  padding: 0;
+}
+
+.quiz-links a {
+  display: block;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  color: #2864c5;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.quiz-links a:hover,
+.quiz-links a:focus-visible {
+  background-color: #e8edf5;
+}
+
+/* 解答欄と市・区・町・村などの表示 */
+.answer-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.answer-unit {
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
