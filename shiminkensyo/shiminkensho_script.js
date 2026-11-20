@@ -138,7 +138,7 @@ questions.forEach(function(question) {
   // 正解を見るボタン
   showButton.addEventListener("click", function() {
 
-    result.textContent = "正解：" + question.answer;
+    result.textContent = "正解：" + question.displayAnswer;
     result.style.color = "#2864c5";
 
   });

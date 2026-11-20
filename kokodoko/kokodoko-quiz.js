@@ -126,7 +126,7 @@ questions.forEach(function(question) {
     }
 
     if (question.answer.includes(userAnswer)) {
-      result.textContent = "正解：" + question.displayAnswer;
+      result.textContent = "正解です！";
       result.style.color = "green";
     } else {
       result.textContent = "不正解です。";
@@ -138,7 +138,7 @@ questions.forEach(function(question) {
   // 正解を見るボタン
   showButton.addEventListener("click", function() {
 
-    result.textContent = "正解：" + question.answer;
+    result.textContent = "正解：" + question.displayAnswer;
     result.style.color = "#2864c5";
     description.hidden = !question.description;
 
