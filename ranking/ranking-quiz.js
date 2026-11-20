@@ -116,7 +116,7 @@ questions.forEach(function(question, questionIndex) {
   showButton.addEventListener("click", function() {
     const answer = question.type === "choice"
       ? question.choices[question.answerIndex]
-      : question.displayAnswer || question.answers[0];
+      : question.answers[0];
     result.textContent = "正解：" + answer;
     result.style.color = "#2864c5";
     description.hidden = !question.description;
