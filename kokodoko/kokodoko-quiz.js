@@ -99,6 +99,7 @@ questions.forEach(function(question) {
     </div>
 
     <p class="result"></p>
+    <p class="description" hidden></p>
   `;
 
   // ページに問題を追加
@@ -109,10 +110,13 @@ questions.forEach(function(question) {
   const checkButton = card.querySelector(".check-button");
   const showButton = card.querySelector(".show-button");
   const result = card.querySelector(".result");
+  const description = card.querySelector(".description");
+  description.textContent = question.description || "";
 
   // 答え合わせボタン
   checkButton.addEventListener("click", function() {
 
+    description.hidden = true;
     const userAnswer = input.value.trim();
 
     if (userAnswer === "") {
@@ -136,6 +140,7 @@ questions.forEach(function(question) {
 
     result.textContent = "正解：" + question.answer;
     result.style.color = "#2864c5";
+    description.hidden = !question.description;
 
   });
 
