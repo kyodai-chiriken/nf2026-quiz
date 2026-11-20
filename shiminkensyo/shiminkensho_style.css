@@ -1,0 +1,12 @@
+/* 市民憲章クイズ：解答欄と市・区の表示 */
+.answer-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.answer-unit {
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
