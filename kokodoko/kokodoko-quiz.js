@@ -74,7 +74,7 @@ questions.forEach(function(question) {
   // HTMLを作成
   card.innerHTML = `
     <p class="question-number">
-      問${question.number}
+      第${question.number}問
     </p>
 
     <div class="answer-row">
